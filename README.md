@@ -1,63 +1,74 @@
 # AdventurePro-Retail---SQL-Analytics-Recommendation-System
 End-to-end SQL project on a synthetic multichannel retail dataset. Includes DB design, data cleaning, KPIs, advanced analytics (channels, margins, portfolio, segmentation) and a pure SQL item–item recommendation system using CTEs, window functions, joins, and indexing.
 
-🎯 Objective
-Using a synthetic dataset that simulates realistic multichannel retail sales (2015–2018), this project:
 
-Builds a clean, normalized relational schema.
+
+### Objective
+Using a **synthetic dataset** that simulates realistic multichannel retail sales (2015–2018), this project:
+
+Builds a clean, normalized **relational schema**.
 
 Prepares and integrates data for analysis.
 
-Generates KPIs and advanced business analytics.
+Generates **KPIs** and advanced business analytics.
 
-Implements a pure SQL item–item recommendation system.
+Implements a pure SQL **item–item recommendation system**.
 
-📦 Dataset
-All data is synthetically generated to mimic real-world sales, products, channels, and stores, avoiding any sensitive information.
 
-🏗️ Modeling & Preparation
-Integration & Cleaning
+### Dataset
+All data is **synthetically generated** to mimic real-world sales, products, channels, and stores, avoiding any sensitive information.
 
-Created aggregated sales table (sales_agg) with calculated revenue (SUM(quantity * offer_price)), standardized date formats, and normalized keys.
 
-Data Governance
+###  Modeling & Preparation
 
-Primary and foreign keys, constraints, and indexing for performance.
+**1. Integration & Cleaning**
+    - Created aggregated sales table (sales_agg) with calculated revenue (SUM(quantity * offer_price)), standardized date formats, and normalized keys.
 
-Operational Views
+**2. Data Governance**
+    - Primary and foreign keys, constraints, and indexing for performance.
 
-Order-level view to simplify analysis and reporting.
+**3. Operational Views**
+    - Order-level view to simplify analysis and reporting.
 
-📊 Business Analysis
-Channel performance ranking and revenue trends.
 
-Top stores and quarterly revenue by country.
 
-Margin and discount outlier detection (P90) with window functions.
+### Business Analysis
+  - Channel performance **ranking** and revenue **trends**.
 
-Portfolio contribution analysis (top products = 90% revenue).
+  - Top stores and **quarterly revenue** by country.
 
-Detection of trending products.
+  - Margin and discount **outlier detection (P90)** with window functions.
 
-Customer segmentation (2×2 matrix by orders/revenue).
+  - **Portfolio contribution analysis** (top products = 90% revenue).
 
-Inactive customer detection for reactivation campaigns.
+  - Detection of **trending products**.
 
-🤖 Recommendation System
-Built using an item–item co-occurrence matrix.
+  - **Customer segmentation** (2×2 matrix by orders/revenue).
 
-Suggests products not yet purchased by each store.
+  - **Inactive customer detection** for reactivation campaigns.
 
-Implemented fully in SQL without external tools.
 
-🧪 SQL Techniques Used
-CTEs, subqueries, window functions (ROW_NUMBER, PERCENT_RANK, CUME_DIST, LAG), complex joins, views, constraints, indexing, and performance optimization.
 
-🚀 How to Run
-Create the database and import initial tables (sales, products, channels, stores).
+### Recommendation System
+  - Built using an **item–item** co-occurrence matrix.
 
-Run setup.sql to prepare aggregated tables, keys, and views.
+  - Suggests products **not yet purchased** by each store.
 
-Run analysis.sql for business KPIs and analytics.
+  - Implemented **fully in SQL** without external tools.
 
-Run recommendation.sql to generate product recommendations.
+
+
+### SQL Techniques Used
+
+  - CTEs, subqueries, window functions (ROW_NUMBER, PERCENT_RANK, CUME_DIST, LAG), complex joins, views, constraints, indexing, and performance optimization.
+
+
+
+### How to Run
+  **1. Create the database and import** initial tables (sales, products, channels, stores).
+
+  **2. Run setup.sql** to prepare aggregated tables, keys, and views.
+
+  **3. Run analysis.sql** for business KPIs and analytics.
+
+  **4. Run recommendation.sql** to generate product recommendations.
