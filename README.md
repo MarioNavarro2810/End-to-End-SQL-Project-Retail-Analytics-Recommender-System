@@ -75,15 +75,15 @@ All data is **synthetically generated** to mimic real-world sales, products, cha
 
 
 ### Repository Structure
-- **data**:
+- **Data**:
   - adventurepro_dump.sql        --> Database dump
 
-- **sql**
+- **SQL**
   - setup.sql                    --> Database creation and preparation
   - analysis.sql                 --> Business analytics queries
   - recommendation.sql           --> Recommendation engine queries
 
-- **docs**
+- **Docs**
   - erd_diagram.png              --> Entity-Relationship Diagram
 
 - **Overview**
