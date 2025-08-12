@@ -72,3 +72,16 @@ All data is **synthetically generated** to mimic real-world sales, products, cha
   **3. Run analysis.sql** for business KPIs and analytics.
 
   **4. Run recommendation.sql** to generate product recommendations.
+
+
+### Repository Structure
+/data
+  adventurepro_dump.sql # Database dump
+/sql
+  setup.sql                    # Database creation and preparation
+  analysis.sql                 # Business analytics queries
+  recommendation.sql           # Recommendation engine queries
+/docs
+  erd_diagram.png              # Entity-Relationship Diagram
+README.md
+
