@@ -3,6 +3,14 @@
 -- Requires: MySQL 8.0+
 -- ===============================
 
+/*This script prepares the AdventurePro Retail database 
+   for analysis. It loads the base tables from the provided 
+   dump, cleans and restructures the sales data to remove 
+   duplicates, establishes relationships with dimension 
+   tables, and creates a ready-to-use aggregated sales 
+   structure for future queries.
+   By the end of this process, the dataset will be cleaner, 
+   fully relational, and optimized for analysis*/
 
 -- First, I import the database from the provided dump file (adventurepro_dump.sql).
 	-- This step allows me to load all the base tables — sales, products, channels, and stores — so I can start working with the complete dataset in MySQL.
@@ -81,3 +89,15 @@ from ventas_agr as v
 	left join
      maestro_pedidos as m
      on (v.fecha = m.fecha) and (v.id_tienda = m.id_tienda) and (v.id_canal = m.id_canal);
+
+/* =========================================================
+   END OF SETUP
+   =========================================================
+   At this stage, the AdventurePro Retail database is ready 
+   for analytical work. The sales data has been aggregated 
+   at the order level, relationships with products, stores, 
+   and channels have been established, and a key view 
+   (v_ventas_agr_pedido) has been created to streamline 
+   future queries. The foundation is now set for performing 
+   deeper business analysis in the next phase.
+*/
