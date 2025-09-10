@@ -84,7 +84,7 @@ All data is **synthetically generated** to mimic real-world sales, products, cha
   - analysis.sql                 --> Business analytics queries
   - recommendation.sql           --> Recommendation engine queries
 
-- **Docs**
+- **Diagrams**
   - erd_diagram.png              --> Entity-Relationship Diagram
 
 
