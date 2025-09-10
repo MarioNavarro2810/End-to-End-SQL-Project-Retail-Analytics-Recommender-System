@@ -86,6 +86,5 @@ All data is **synthetically generated** to mimic real-world sales, products, cha
 - **Docs**
   - erd_diagram.png              --> Entity-Relationship Diagram
 
-- **Overview**
-  - README.md
+
 
